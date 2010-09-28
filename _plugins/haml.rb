@@ -1,7 +1,6 @@
 module Jekyll
-
   class HamlConverter < Converter
-    safe false
+    safe true
 
     pygments_prefix '<notextile>'
     pygments_suffix '</notextile>'
@@ -66,5 +65,5 @@ module Jekyll
 
 
   end # class
-  end # module
+end # module
 

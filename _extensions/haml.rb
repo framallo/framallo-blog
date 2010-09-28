@@ -11,7 +11,6 @@ module Jekyll
     private
 
     def compile_haml(files, input_regex, output_extension)
-      puts Dir.glob(files).collect {|f| f}.join(' - ')
       Dir.glob(files).each do |f| 
         begin
           origin = File.open(f).read
@@ -34,10 +33,5 @@ module Jekyll
 
   AOP.before(Site, :render) do |site_instance, result, args|
     site_instance.haml2html
-  end
-
-  AOP.around(Site, :filter_entries) do |site_instance, args, proceed, abort|
-    result = proceed.call
-    result.reject{ |entry| entry.match(/\.haml$/) }
   end
 end
