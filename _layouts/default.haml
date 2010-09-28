@@ -2,54 +2,30 @@
 %html{:xmlns => "http://www.w3.org/1999/xhtml"}
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %meta{:content => "ruby rails seattle tangosource development", :name => "keywords"}/
+    %meta{:content => "ruby rails development federico ramallo", :name => "keywords"}/
     %meta{:content => "ALL", :name => "ROBOTS"}/
-    %title {{ page.title }} 
+    %title {{ page.title }}
     / Shortcut Icon
-    %link{:href => "/assets/favicon.ico", :rel => "icon", :type => "image/x-icon"}/
-    %link{:href => "/assets/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
+    %link{:href => "/img/favicon.ico", :rel => "icon", :type => "image/x-icon"}/
+    %link{:href => "/img/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
     / styles
-    %link{:href => "/assets/css/global.css", :rel => "stylesheet", :type => "text/css"}/
-    %link{:href => "/assets/css/jquery.jcarousel.css", :rel => "stylesheet", :type => "text/css"}/
-    %link{:href => "/assets/css/skin.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/css/global.css", :rel => "stylesheet", :type => "text/css"}/
     /[if IE]
       <link href="/assets/css/iefixes.css" rel="stylesheet" type="text/css" />
   %body
     #getclicky
       :preserve
-        <script src="http://static.getclicky.com/js" type="text/javascript"></script>
-        <script type="text/javascript">clicky.init(241226);</script>
-        <noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/241226ns.gif" /></p></noscript>
-
-    %script{:type=>"text/javascript",:src=>"js/jquery.js"}
-    %script{:type=>"text/javascript",:src=>"js/jquery.lightbox-0.4.js"}
-    %link{:rel=>"stylesheet",:type=>"text/css",:href=>"css/jquery.lightbox-0.4.css",:media=>"screen"}
-
+      <script src="http://static.getclicky.com/js" type="text/javascript"></script> <script type="text/javascript">clicky.init(256188);</script> <noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/256188ns.gif" /></p></noscript>
     #header
-      .wrapper.clearfix
-        %h1.logo
-          %a{:href => "http://www.tangosource.com", :title => "TangoSource"} Tango Source
-          %span Building harmony, together
-        #menu.fright
-          %ul
-            %li.last 
-    / HEADER END
+        %h1.title {{ page.title }}
     #content
-      {{ content }} 
-    / CONTENT END
+      {{ content }}
     #footer
-      .wrapper
-        %img.fright{:alt => "TangoSource", :src => "/assets/images/icn/tangosource_logo_footer.gif"}/
-        .fleft
-          %ul
-            %li
-              %a{:href => "/"} Home
-            %li
-              %a{:href => "/our_work/"} Our Work
-            %li
-              %a{:href => "/about_us/"} About Us
-            %li
-              %a{:href => "/contact_us/"} Contact
-          %p &copy; 2010 | TangoSource LLC | All Rights Reserved
-    / FOOTER END
-
+      %ul
+        %li
+          %a{:href => "/http://github/framallo"} http://github/framallo
+        %li
+          %a{:href => "http://twitter.com/framalo"} http://twitter.com/framalo
+        %li
+          %a{:href => "/contact.html"} Contact
+      %p &copy; 2010 | Federico Ramallo | All Rights Reserved
