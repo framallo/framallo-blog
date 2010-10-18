@@ -1,6 +1,0 @@
----
-layout: default
-title: wow!
----
-
-h1. wow this is my first post!
