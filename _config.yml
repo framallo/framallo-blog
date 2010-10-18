@@ -3,7 +3,7 @@ auto:        true
 server:      false
 server_port: 4000
 
-source:      /Users/framallo/workspace/blog
+source:      .
 destination: ./_site
 plugins:     ./_plugins
 
