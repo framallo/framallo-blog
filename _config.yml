@@ -23,3 +23,6 @@ maruku:
 rdiscount:
   extensions: []
 
+exclude:
+  - config.rb
+

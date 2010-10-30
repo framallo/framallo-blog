@@ -9,9 +9,10 @@
     %link{:href => "/img/favicon.ico", :rel => "icon", :type => "image/x-icon"}/
     %link{:href => "/img/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
     / styles
-    %link{:href => "/css/global.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/css/screen.css", :rel => "stylesheet", :media => "screen, projection",:type => "text/css"}/
+    %link{:href => "/css/print.css", :rel => "stylesheet", :media => "print",:type => "text/css"}/
     /[if IE]
-      <link href="/assets/css/iefixes.css" rel="stylesheet" type="text/css" />
+      <link href="/assets/css/ie.css" rel="stylesheet" media="screen, projection" type="text/css" />
   %body
     #getclicky
       :preserve
