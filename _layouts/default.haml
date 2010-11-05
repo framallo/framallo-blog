@@ -17,36 +17,77 @@
       <link href="/assets/css/iefixes.css" rel="stylesheet" type="text/css" />
   %body
     %header.menubar
-      .nav
-        %ul
-          %li
-            %h1{:class=>"logo"}
-              %a{:href => '/profile.html'} Federico Ramallo
-          %li
-            %a{:href => "/http://github/framallo"} github /
-          %li
-            %a{:href => "http://twitter.com/framallo"} twitter /
-          %li
-            %a{:href => "/contact.html"} Contact
-      -#.logo
-        -#%h1
-          -#{{ page.title }}
       .menu
+        %h1
+          Federico<span>Ramallo</span>
         %ul
           %li
-            %a{:href => '/profile.html'} Categoria 1
+            %a{:href => '#'} Home
           %li
-            %a{:href => "/http://github/framallo"} Ruby
+            %a{:href => "#"} About
           %li
-            %a{:href => "http://twitter.com/framallo"} Rails
+            %a{:href => "#"} Contact
           %li
-            %a{:href => "/contact.html"} NoSQL
-          %li
-            %a{:href => "/contact.html"} Viajes
-          %li
-            %a{:href => "/contact.html"} CouchDB
+            %a{:href => "#"} Travel
+      #info
+        %img#picture{:src=>'/img/framallo.png'}
+          
+        %h2#rockandroll
+          Rock<span class="amp">&amp;</span><span class="roll">Roll!</span>
+        #moreinfo
+          I run the Rails development company <a src='http://tangosource.com'>TangoSource</a>,
+          I have contributed to over 10.000.000 <a src='http://tangosource.com'>open source</a>
+          projects, and I love talking at <a src='http://tangosource.com'>conferences</a>.
     #container
       #main
+        %section.opensource
+          %h2 Open Source Projects
+          %ul
+            %li
+              %h3 
+                %a{:href=>''} Vim for Rails
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+            %li
+              %h3 
+                %a{:href=>''} gh-Dotfiles
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+            %li
+              %h3 
+                %a{:href=>''} EmcasOnRails
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+            %li
+              %h3 
+                %a{:href=>''} Framallo-blog
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+        %section.recentbp
+          %h2 Recent Blog Posts
+          %ul
+            %li
+              %h3
+                %a{:href=>''} Nunc placerat arcu et sapien adipiscing semper
+              \ - November 3th, 2010
+            %li
+              %h3 
+                %a{:href=>''} Nunc placerat arcu et sapien adipiscing semper
+              \ - November 3th, 2010
+            %li
+              %h3 
+                %a{:href=>''} Nunc placerat arcu et sapien adipiscing semper
+              \ - November 3th, 2010
+            %li
+              %h3 
+                %a{:href=>''} Nunc placerat arcu et sapien adipiscing semper
+              \ - November 3th, 2010
+            %li
+              %h3 
+                %a{:href=>''} Nunc placerat arcu et sapien adipiscing semper
+              \- November 3th, 2010
+        %section.tangosource
+          %h2 TangoSource
+          %img{:src=>'/img/tangosource.png'}
+          %p Based in Seattle and Latin America, we are a group of developers, strategists, and experience architects. We are passionate about shipping early, often, and on different platforms, including Ruby on Rails. Engage us to bring peace of mind and passion to any project.          
+
+          %h3 "We build applications to bring the world together"
         {{ content }}
     #getclicky
       :preserve
