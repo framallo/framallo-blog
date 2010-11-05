@@ -23,3 +23,4 @@ categories: [ruby, gem-open]
     }.strip
 {% endhighlight %}
 
+Bye!

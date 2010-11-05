@@ -19,76 +19,49 @@
     %header.menubar
       .menu
         %h1
-          Federico<span>Ramallo</span>
+          %a{:href=>'/'}Federico<span>Ramallo</span>
         %ul
           %li
-            %a{:href => '#'} Home
+            %a{:href => 'http://framallo.com'} Home
           %li
-            %a{:href => "#"} About
+            %a{:href => "/about"} About
           %li
-            %a{:href => "#"} Contact
+            %a{:href => "/contact"} Contact
           %li
-            %a{:href => "#"} Travel
-      #info
-        %img#picture{:src=>'/img/framallo.png'}
-          
-        %h2#rockandroll
-          Rock<span class="amp">&amp;</span><span class="roll">Roll!</span>
-        #moreinfo
-          I run the Rails development company <a src='http://tangosource.com'>TangoSource</a>,
-          I have contributed to over 10.000.000 <a src='http://tangosource.com'>open source</a>
-          projects, and I love talking at <a src='http://tangosource.com'>conferences</a>.
+            %a{:href => "/travel"} Travel
     #container
       #main
-        %section.opensource
-          %h2 Open Source Projects
-          %ul
-            %li
-              %h3 
-                %a{:href=>''} Vim for Rails
-              Lorem ipsum dolor sit amet, consectetur adipiscing
-            %li
-              %h3 
-                %a{:href=>''} gh-Dotfiles
-              Lorem ipsum dolor sit amet, consectetur adipiscing
-            %li
-              %h3 
-                %a{:href=>''} EmcasOnRails
-              Lorem ipsum dolor sit amet, consectetur adipiscing
-            %li
-              %h3 
-                %a{:href=>''} Framallo-blog
-              Lorem ipsum dolor sit amet, consectetur adipiscing
-        %section.recentbp
-          %h2 Recent Blog Posts
-          %ul
-            %li
-              %h3
-                %a{:href=>''} Nunc placerat arcu et sapien adipiscing semper
-              \ - November 3th, 2010
-            %li
-              %h3 
-                %a{:href=>''} Nunc placerat arcu et sapien adipiscing semper
-              \ - November 3th, 2010
-            %li
-              %h3 
-                %a{:href=>''} Nunc placerat arcu et sapien adipiscing semper
-              \ - November 3th, 2010
-            %li
-              %h3 
-                %a{:href=>''} Nunc placerat arcu et sapien adipiscing semper
-              \ - November 3th, 2010
-            %li
-              %h3 
-                %a{:href=>''} Nunc placerat arcu et sapien adipiscing semper
-              \- November 3th, 2010
-        %section.tangosource
-          %h2 TangoSource
-          %img{:src=>'/img/tangosource.png'}
-          %p Based in Seattle and Latin America, we are a group of developers, strategists, and experience architects. We are passionate about shipping early, often, and on different platforms, including Ruby on Rails. Engage us to bring peace of mind and passion to any project.          
-
-          %h3 "We build applications to bring the world together"
         {{ content }}
+    %footer#footer
+      .footer-info
+        .reading
+          %h3 Reading
+        .links
+          %h3 Those I read &amp; follow
+          %ul
+            %li
+              %a{:href=>''} eduarbo
+            %li
+              %a{:href=>''} Framallo
+            %li
+              %a{:href=>''} TangoSource
+        .findme
+          %h3 Find me in
+          %ul
+            %li
+              %a.github{:title=>'Github', :href=>'http://github.com/framallo'} github
+            %li
+              %a.linkedin{:title=>'LinkedIn', :href=>'http://mx.linkedin.com/pub/federico-ramallo/22/109/a51'} LinkedIn
+            %li
+              %a.twitter{:title=>'Twitter',:href=>'http://twitter.com/framallo'} Twitter
+            %li
+              %a.skype{:title=>'Skype',:href=>'skype:framallo'} Skype
+            %li
+              %a.rails{:title=>'Working with Rails',:href=>'http://workingwithrails.com/person/8432-federico-ramallo'} Working with Rails
+      .copyright
+        %p Copyright © 2010 Federico Ramallo | Contact Me
+      
     #getclicky
       :preserve
         <script src="http://static.getclicky.com/js" type="text/javascript"></script> <script type="text/javascript">clicky.init(256188);</script> <noscript><p><img alt="Clicky" width="1" height="1" src="http://in.getclicky.com/256188ns.gif" /></p></noscript>
+        <script type="text/javascript">var disqus_shortname = 'framallo'; (function () {  var s = document.createElement('script'); s.async = true;  s.src = 'http://disqus.com/forums/framallo/count.js';  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s); }()); </script>  

@@ -19,12 +19,14 @@ h1, h2, h3, h4, h5 {
   font-weight: normal;
 }
 ul {list-style:square;}
+a {text-decoration:none;}
+a:hover {text-decoration:underline;}
 #container {
   width: 800px;
   margin: 0 auto;
 }
 .menubar {
-  background:transparent url("/img/shine.png") no-repeat 0 0;
+  background:transparent url("/img/shine.png") no-repeat -30px -100;
   line-height: 150%;
   margin: 0 auto; 
   padding-top: 0;
@@ -47,7 +49,7 @@ ul {list-style:square;}
 header {
   display: block;
 }
-#info {padding:25px 0 0 0 }
+#info {padding:25px 0 0 0; }
 #picture {
   margin:0 0 0 40px; 
   border: 4px solid #FFF;
@@ -118,7 +120,6 @@ p code {
   border-radius: 0.2em;
 }
 .meta {
-  font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2";
   font-size: 0.9em;
   font-weight: bold;
   color: #999999;
@@ -132,9 +133,15 @@ p code {
   text-decoration: none;
   border-bottom: 1px dotted #d3dfee;
 }
+.content {
+  background: transparent url("/img/line.png") repeat-x 0 bottom;
+  padding:0 0 10px 0;
+  margin:0 0 5px 0;
+}
 .content a {
   color: #004491;
   text-decoration: none;
+  overflow:hidden;
   border-bottom: 1px dotted #d3dfee;
 }
 .related a {
@@ -217,3 +224,60 @@ section a:hover {color:#000;text-decoration:underline}
 .recentbp h3 {display:inline; font-weight:bold;}
 .tangosource h3 {font-size:27px; font-weight:bold;text-align:center;font-family:Inconsolata}
 .tangosource img {float:right; margin: 20px;}
+
+#footer {
+  background: #000;
+  text-shadow:none;
+  color:#FFF;
+  font-size:14px;
+  display:block;
+}
+#footer a {color:#FFF;}
+#footer h3 {text-transform:uppercase;font-weight:bold;font-size:20px;}
+.footer-info{
+  width:800px;
+  overflow:hidden;
+  margin:0 auto;
+  border-bottom:1px solid #2F2F2F;
+}
+.reading {
+  float:left;
+  height:auto;
+  width:230px;
+  padding:0 20px;
+}
+.links{
+  float:left;
+  width:290px;
+  padding:0 20px;
+  border-right:1px solid #2F2F2F;
+  border-left:1px solid #2F2F2F;
+  height:300px;
+}
+.links ul{padding:0 20px}
+.links li {width:48%;display:inline-block;}
+.findme {
+  float:left;
+  width:150px;
+  padding:0 20px;
+}
+.copyright{
+  margin:0 auto;
+  width:800px;
+}
+.findme li a {
+  font-size:0px;
+  background:transparent url('/img/social-icons.png') no-repeat 0 0;
+  text-indent:1000px;
+  width:32px;
+  height:32px;
+  margin:10px;
+  display:block;
+}
+.findme ul {padding:0;}
+.findme li {display:inline-block;}
+.findme .github {background-position: 0 0;}
+.findme .linkedin {background-position: 0 -60px;}
+.findme .twitter {background-position: 0 -120px;}
+.findme .skype {background-position: 0 -180px;}
+.findme .rails {background-position: 0 -240px;}
