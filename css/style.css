@@ -11,7 +11,7 @@ body {
 	font: 18px  "Inconsolata","Andalame Mono", "Courier", "Arial";
 	line-height: 1.7em;
 	color: #333;
-  background: url("/img/bg.png") repeat 0 0;
+  background: url("/images/bg.png") repeat 0 0;
   text-shadow:1px 1px 0 #FFF;
 }
 h1, h2, h3, h4, h5 {
@@ -26,7 +26,7 @@ a:hover {text-decoration:underline;}
   margin: 0 auto;
 }
 .menubar {
-  background:transparent url("/img/shine.png") no-repeat -30px -100;
+  background:transparent url("/images/shine.png") no-repeat -30px -100;
   line-height: 150%;
   margin: 0 auto; 
   padding-top: 0;
@@ -61,7 +61,7 @@ header {
 #rockandroll{font-size:60px; font-weight:bold;color:#000}
 #rockandroll .roll {color:#C00;}
 #rockandroll .amp {color:#666;font-family:"Cooper Std";}
-#moreinfo {background: transparent url("/img/line.png") repeat-x 0 bottom;line-height:1.1em;margin:40px 0 0 0; padding: 0 0 20px; font-size:30px;}
+#moreinfo {background: transparent url("/images/line.png") repeat-x 0 bottom;line-height:1.1em;margin:40px 0 0 0; padding: 0 0 20px; font-size:30px;}
 #moreinfo a{font-family:"Helvetica Neue","Helvetica"; font-weight:bold;color:#06F}
   
 .post { display: block; }
@@ -134,7 +134,7 @@ p code {
   border-bottom: 1px dotted #d3dfee;
 }
 .content {
-  background: transparent url("/img/line.png") repeat-x 0 bottom;
+  background: transparent url("/images/line.png") repeat-x 0 bottom;
   padding:0 0 10px 0;
   margin:0 0 5px 0;
 }
@@ -201,14 +201,14 @@ pre {
 .vi { color: #ff9f9d; }
 .c, .c1 { color: #a0a0a0; }
 
-.menu {padding:10px 0 0 0;overflow:hidden;background: transparent url("/img/line.png") repeat-x 0 bottom;}
+.menu {padding:10px 0 0 0;overflow:hidden;background: transparent url("/images/line.png") repeat-x 0 bottom;}
 .menu ul {text-align:right;float:right;text-transform:uppercase;font-family:"Helvetica Neue", "Helvetica"; font-weight:bold; margin:0;padding:0;list-style:none;}
 .menu ul li {display:inline-block;margin:10px 10px;}
 .menu a {text-decoration:none; color:#333;}
 .menu a:hover {color:#000;}
 .menu h1 {color:#000;}
 .menu h1 span{font-weight:bold;}
-#main section {display:block;font-size:14px; color:#666;padding:0 0 20px 0; overflow:hidden;background: transparent url("/img/line.png") repeat-x 0 bottom;}
+#main section {display:block;font-size:14px; color:#666;padding:0 0 20px 0; overflow:hidden;background: transparent url("/images/line.png") repeat-x 0 bottom;}
 #main section p {font-size:20px;color:#333;}
 #main section h3 {color:#333;margin:0}
 #main section h2 {
@@ -267,7 +267,7 @@ section a:hover {color:#000;text-decoration:underline}
 }
 .findme li a {
   font-size:0px;
-  background:transparent url('/img/social-icons.png') no-repeat 0 0;
+  background:transparent url('/images/social-icons.png') no-repeat 0 0;
   text-indent:1000px;
   width:32px;
   height:32px;

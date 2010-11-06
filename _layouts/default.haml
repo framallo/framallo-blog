@@ -6,8 +6,8 @@
     %meta{:content => "ALL", :name => "ROBOTS"}/
     %title {{ page.title }}
     / Shortcut Icon
-    %link{:href => "/img/favicon.ico", :rel => "icon", :type => "image/x-icon"}/
-    %link{:href => "/img/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
+    %link{:href => "/images/favicon.ico", :rel => "icon", :type => "image/x-icon"}/
+    %link{:href => "/images/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
     / styles
     -#%link{:href => "/css/global.css", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "/css/style.css", :rel => "stylesheet", :type => "text/css"}/
@@ -40,11 +40,9 @@
           %h3 Those I read &amp; follow
           %ul
             %li
-              %a{:href=>''} eduarbo
+              %a{:href=>'http://tangosource.com'} TangoSource
             %li
-              %a{:href=>''} Framallo
-            %li
-              %a{:href=>''} TangoSource
+              %a{:href=>'http://eduarbo.com'} eduarbo
         .findme
           %h3 Find me in
           %ul
@@ -59,7 +57,7 @@
             %li
               %a.rails{:title=>'Working with Rails',:href=>'http://workingwithrails.com/person/8432-federico-ramallo'} Working with Rails
       .copyright
-        %p Copyright © 2010 Federico Ramallo | Contact Me
+        %p Copyright © 2010 Federico Ramallo
       
     #getclicky
       :preserve
