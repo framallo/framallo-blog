@@ -1,0 +1,27 @@
+// a2x: -fxhtml
+// a2x: -v
+
+= Federico Ramallo Blog =
+:author: Federico Ramallo
+:email: framallo@gmail.com
+:website: http://framallo.com
+:pygments:
+
+
+== set up ==
+
+- Set up rvm
+
+  rvm use ree &&
+  rvm gemset create blog
+
+- Install gems
+
+  bundle
+
+- install jekyll dependencies. check https://github.com/mojombo/jekyll/wiki/Install
+
+On OSX with MacPorts:
+
+  sudo port install python25 py25-pygments
+
