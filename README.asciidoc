@@ -25,3 +25,12 @@ On OSX with MacPorts:
 
   sudo port install python25 py25-pygments
 
+
+== Start the server ==
+
+Just run:
+
+  ejekyll --server --auto
+
+== Deploy ==
+TODO
