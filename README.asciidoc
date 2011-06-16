@@ -3,10 +3,18 @@
 
 = Federico Ramallo Blog =
 :author: Federico Ramallo
+- README.asciidoc
 :email: framallo@gmail.com
 :website: http://framallo.com
 :pygments:
 
+== Introduction ==
+
+This is Federico Ramallo's blog.
+I'm using jekyll site generator. check:
+- http://jekyllrb.com/
+- http://github.com/rfelix/my_jekyll_extensions
+- 
 
 == set up ==
 

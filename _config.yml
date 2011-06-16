@@ -30,3 +30,11 @@ tag_title_prefix: "Tags &raquo; "
 # enable related_tags computing
 related_tags: true
 
+
+exclude:
+  - Gemfile.lock
+  - Gemfile
+  - README.asciidoc
+  - jekyll_ext-0.1.4
+  - my_jekyll_extensions
+  - jekyll-0.10.0

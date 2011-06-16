@@ -8,3 +8,5 @@ gem 'RedCloth'
 
 gem 'jekyll'
 gem 'jekyll_ext'
+
+gem 'ruby-debug'
