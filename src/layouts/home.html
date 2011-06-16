@@ -1,0 +1,70 @@
+---
+layout: default
+---
+<header class='menubar'>
+<div class='menu'>
+  <h1>
+    <a href='/'>Federico<span>Ramallo</span></a>
+  </h1>
+  <ul>
+    <li>
+    <a href='http://framallo.com'>Home</a>
+    </li>
+    <li>
+    <a href='/about'>About</a>
+    </li>
+    <li>
+    <a href='/contact'>Contact</a>
+    </li>
+    <li>
+    <a href='/travel'>Travel</a>
+    </li>
+  </ul>
+</div>
+</header>
+<div id='container' class="page-<%= @Document.slug %>">
+  <div id='main'>
+    <%- @content %>
+  </div>
+</div>
+<footer id='footer'>
+<div class='footer-info'>
+  <div class='reading'>
+    <h3>Reading</h3>
+  </div>
+  <div class='links'>
+    <h3>Those I read &amp; follow</h3>
+    <ul>
+      <li>
+      <a href='http://tangosource.com'>TangoSource</a>
+      </li>
+      <li>
+      <a href='http://eduarbo.com'>eduarbo</a>
+      </li>
+    </ul>
+  </div>
+  <div class='findme'>
+    <h3>Find me in</h3>
+    <ul>
+      <li>
+      <a class='github' href='http://github.com/framallo' title='Github'>github</a>
+      </li>
+      <li>
+      <a class='linkedin' href='http://mx.linkedin.com/pub/federico-ramallo/22/109/a51' title='LinkedIn'>LinkedIn</a>
+      </li>
+      <li>
+      <a class='twitter' href='http://twitter.com/framallo' title='Twitter'>Twitter</a>
+      </li>
+      <li>
+      <a class='skype' href='skype:framallo' title='Skype'>Skype</a>
+      </li>
+      <li>
+      <a class='rails' href='http://workingwithrails.com/person/8432-federico-ramallo' title='Working with Rails'>Working with Rails</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class='copyright'>
+  <p>Copyright © 2010 Federico Ramallo</p>
+</div>
+</footer>
