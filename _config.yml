@@ -41,3 +41,5 @@ exclude:
   - videos
 
 url: http://framallo.com
+
+markdown_ext: mmd

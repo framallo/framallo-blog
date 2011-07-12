@@ -20,6 +20,7 @@ GEM
     maruku (0.6.0)
       syntax (>= 1.0.0)
     rbx-require-relative (0.0.5)
+    rpeg-multimarkdown (0.1.1)
     ruby-debug (0.10.4)
       columnize (>= 0.1)
       ruby-debug-base (~> 0.10.4.0)
@@ -35,4 +36,5 @@ DEPENDENCIES
   haml
   jekyll
   jekyll_ext
+  rpeg-multimarkdown
   ruby-debug

@@ -4,7 +4,7 @@ source "http://rubygems.org"
 # gem "rails"
 #
 gem 'haml'
-gem 'multimarkdown'
+gem 'rpeg-multimarkdown'
 
 gem 'RedCloth'
 
