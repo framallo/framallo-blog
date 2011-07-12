@@ -1,0 +1,34 @@
+<div class="video-js-wrapper">
+  <!-- Begin VideoJS -->
+  <div class="video-js-box">
+    <!-- Using the Video for Everybody Embed Code http://camendesign.com/code/video_for_everybody -->
+    <video id="example_video_1" class="video-js" width="800" height="450" controls="controls" preload="auto" poster="/videos/{{ poster }}">
+    {% case video_type %}
+    {% when 'mp4' %}
+    <source src="/videos/{{ video }}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+    {% when 'webm' %}
+    <source src="/videos/{{ video }}" type='video/webm; codecs="vp8, vorbis"' />
+    {% when 'ogv' %}
+      <source src="/videos/{{ video }}" type='video/ogg; codecs="theora, vorbis"' />
+    {% endcase %}
+      <!-- Flash Fallback. Use any flash video player here. Make sure to keep the vjs-flash-fallback class. -->
+      <object id="flash_fallback_1" class="vjs-flash-fallback" width="800" height="540" type="application/x-shockwave-flash"
+        data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf">
+        <param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+        <param name="allowfullscreen" value="true" />
+        <param name="flashvars" value='config={"playlist":["/videos/{{ poster }}", {"url": "{{ site.url }}/videos/{{ video }}","autoPlay":false,"autoBuffering":true}]}' />
+        <!-- Image Fallback. Typically the same as the poster image. -->
+        <img src="/videos/{{ poster }}" width="800" height="540" alt="Poster Image"
+          title="No video playback capabilities." />
+      </object>
+    </video>
+    <!-- Download links provided for devices that can't play video in the browser. -->
+    <p class="vjs-no-video"><strong>Download Video:</strong>
+    <a href="/videos/{{ video }}">/videos/{{ video }}</a>,
+      <!-- Support VideoJS by keeping this link. -->
+      <a href="http://videojs.com">HTML5 Video Player</a> by VideoJS
+    </p>
+  </div>
+  <!-- End VideoJS -->
+</div>
+

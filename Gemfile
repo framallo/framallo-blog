@@ -4,6 +4,8 @@ source "http://rubygems.org"
 # gem "rails"
 #
 gem 'haml'
+gem 'multimarkdown'
+
 gem 'RedCloth'
 
 gem 'jekyll'

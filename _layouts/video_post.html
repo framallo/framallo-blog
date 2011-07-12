@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% assign body = content %}
+{% include post-div-pre.html %}
+
+{% if page.video %}
+  {% assign video = page.video %}
+  {% assign video_type = page.video_type %}
+  {% include video-js.html %}
+{% endif %}
+{% include post-div-post.html %}
+
+<link href='/css/video-js/video-js.css' rel='stylesheet' type='text/css' />
+<script src="/js/video.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+  VideoJS.setupAllWhenReady();
+</script>
+
+
+{% include disqus.html %} 

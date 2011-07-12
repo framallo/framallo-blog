@@ -56,13 +56,26 @@ header {
   -moz-box-shadow: 0 0 10px #999;
   -webkit-box-shadow: 0 0 10px #999;
   box-shadow: 0 0 10px #999;
+  float:left;
 }
-#rockandroll {float:right;margin:20px 40px 0 0}
+#rockandroll {
+  float:right;
+  margin:20px 40px 0 0;
+}
 #rockandroll{font-size:60px; font-weight:bold;color:#000}
 #rockandroll .roll {color:#C00;}
 #rockandroll .amp {color:#666;font-family:"Cooper Std";}
-#moreinfo {background: transparent url("/images/line.png") repeat-x 0 bottom;line-height:1.1em;margin:40px 0 0 0; padding: 0 0 20px; font-size:30px;}
+#moreinfo {
+  background: transparent url("/images/line.png") repeat-x 0 bottom;
+  line-height:1.1em;
+  margin:40px 0 0 0;
+  padding: 0 0 20px;
+  font-size:30px;
+}
 #moreinfo a{font-family:"Helvetica Neue","Helvetica"; font-weight:bold;color:#06F}
+.clear {
+  clear: both;
+}
   
 .post { display: block; }
 div.update {
@@ -281,3 +294,10 @@ section a:hover {color:#000;text-decoration:underline}
 .findme .twitter {background-position: 0 -120px;}
 .findme .skype {background-position: 0 -180px;}
 .findme .rails {background-position: 0 -240px;}
+
+.vjs-controls {
+  text-shadow: none;
+}
+.video-js-wrapper {
+  padding: 0 0 2em 0;
+}
