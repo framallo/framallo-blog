@@ -2,5 +2,5 @@
   <span
     class="author"><a href="#">Federico Ramallo</a></span> &middot; 
   <span class="date">{{ page.date | date: "%e" | ordinalize }} {{ page.date | date: "%B"}} {{ page.date | date: "%Y"}}</span>
-  <span class="tags">{% for tag in page.categories %} &middot; <a href="/tags/{{tag}}" rel="tag">{{tag}}</a>{% endfor %}</span>
+  <span class="tags">{% for cat in page.categories %} &middot; <a href="/categories.html#{{cat}}" rel="category">{{cat}}</a>{% endfor %}</span>
 </div>
